@@ -39,7 +39,7 @@ export default function Home({latestEpisodes, allEpisodes}:HomeProps) {
               objectFit="cover"
               src={episode.thumbnail} alt={episode.title}/>
               <div className={styles.episodeDetails}>
-                <Link href={`/episode/${episode.id}`}><a>{episode.title}</a></Link>
+                <Link href={`/episodes/${episode.id}`}><a>{episode.title}</a></Link>
                 <p>{episode.members}</p>
                 <span>{episode.publishedAt}</span>
                 <span>{episode.durationAsString}</span>
@@ -79,7 +79,7 @@ export default function Home({latestEpisodes, allEpisodes}:HomeProps) {
                 objectFit="cover"/>
                 </td>
                 <td>
-                  <Link href={`/episode/${episode.id}`}>
+                  <Link href={`/episodes/${episode.id}`}>
                   <a>{episode.title}</a>
                   </Link>
                 </td>
